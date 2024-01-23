@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca33hn3m5vt00"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_o728f"]
+[ext_resource type="Texture2D" uid="uid://brgwnoyns38cl" path="res://sprites/background/background fungil.webp" id="3_c6sct"]
+
+[sub_resource type="Theme" id="Theme_tic06"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_tic06")
+script = ExtResource("1_o728f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = -28.0
+offset_right = 44.5
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StarGame" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Star Game"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Exit"
+
+[node name="BackgroundFungil" type="Sprite2D" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(138, 117)
+scale = Vector2(0.57963, 0.549774)
+texture = ExtResource("3_c6sct")
+offset = Vector2(100, 0)
+
+[connection signal="pressed" from="VBoxContainer/StarGame" to="." method="_on_star_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

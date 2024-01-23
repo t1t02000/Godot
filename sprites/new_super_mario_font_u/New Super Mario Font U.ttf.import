@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://dmboir1sp3qyq"
+path="res://.godot/imported/New Super Mario Font U.ttf-610e96aa4d0c0c8822ecc97ec283706a.fontdata"
+
+[deps]
+
+source_file="res://sprites/new_super_mario_font_u/New Super Mario Font U.ttf"
+dest_files=["res://.godot/imported/New Super Mario Font U.ttf-610e96aa4d0c0c8822ecc97ec283706a.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}
